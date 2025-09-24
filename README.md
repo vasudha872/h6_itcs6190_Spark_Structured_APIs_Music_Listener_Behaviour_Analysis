@@ -51,17 +51,21 @@ Using Spark DataFrames and SQL-style transformations, we extract insights about:
 │   │   ├── part-*.csv
 │   ├── night_owl_users/
 │   │   ├── part-*.csv
+```
 
-
-#  Music Streaming Analysis Using Spark Structured APIs
-
-Each analysis task produces a CSV file inside its own folder under outputs/:
-
-outputs/
-├── user_favorite_genres/     # Task 1 results
-├── avg_listen_time/          # Task 2 results
-├── genre_loyalty_scores/     # Task 3 results
-├── night_owl_users/          # Task 4 results
+## Output Directory Structure
+Results of each task are saved as CSV files in their respective folders within the `outputs/` directory:
+```bash
+├── output
+│   ├── userfavoritegenres
+│   │   ├── **.csv
+│   ├── avglistentimepersong
+│   │   ├── **.csv
+│   ├── genreloyaltyscores
+│   │   ├── **.csv
+│   ├── nightowlusers
+│   │   ├── **.csv
+```
 
 ## Tasks and Outputs
 ### Task 1: User Favourite Genre  
